@@ -7,8 +7,9 @@ import json
 import os
 
 TOKEN = os.getenv('TOKEN', config.telegram_token)
+APP_NAME = os.getenv('HEROKU_APP_NAME')
 bot = Bot(TOKEN)
-URL = 'https://{herokuapp}.herokuapp.com/{token}'.format(herokuapp=config.heroku_app, token=TOKEN)
+URL = 'https://{herokuapp}.herokuapp.com/{token}'.format(herokuapp=APP_NAME, token=TOKEN)
 payload = {'url': URL}
 requests.get('https://api.telegram.org/bot{token}/setWebhook'.format(token=TOKEN), params=payload)
 
