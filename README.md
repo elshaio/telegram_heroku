@@ -3,8 +3,6 @@
 Simple Bot for send messages to your telegram using an api that wraps your token inside heroku.
 I use it just to know my chat_id when I forget it usin `/getchatid` or to send messages of my sh scripts using a curl.
 
-[[_TOC_]]
-
 ## Creating a bot
 First you must want to create a bot and get your token for send messages, please call to [BotFather](https://telegram.me/BotFather) and then you have a token, save it for later.
 
@@ -17,7 +15,7 @@ Finally, just follow the next instructions, they will create a new app, enable m
 | Variable      | Description                                                                                               |
 | ---           | ---                                                                                                       |
 | appname       | your personal app name, remember you future url will be something like `https://<appname>.herokuapp.com/` |
-| telegramtoken | The token that you receibe from `BotFather`                                                               |
+| telegramtoken | The token that you receive from `BotFather`                                                               |
 
 ### Script instructions
 
